@@ -19,3 +19,5 @@ This is a regression from Unity 2021, in which this not does not happen. The iss
 
 I've reported a similar issue but related to Mesh Renderers going invisible, although it feels like the same underlying issue:
 https://github.com/DeanIsseyegh/unity-6-mesh-renderer-anim-issue/blob/main/README.md
+
+There is also this previous bug I reported a while ago that was fixed in 6000.0.32, but again this feels related in some ways: https://github.com/DeanIsseyegh/unity-6-sprite-render-issue

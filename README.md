@@ -1,6 +1,11 @@
 # unity-6-sprite-render-anim-issue
 Very basic project showcasing a bug in Unity where changing a property on a Material via an animation causes it sprites to render incorrectly
 
+Forum post here:
+https://discussions.unity.com/t/another-serious-sprite-renderer-issue-with-animators-in-unity-6/1582165
+
+Bug reported and incident created under IN-92681
+
 # Instructions
 
 Start project up and open "SampleScene.unity" with Unity version 6000.0.33

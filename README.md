@@ -3,8 +3,6 @@ Very basic project showcasing a bug in Unity where changing a property on a Mate
 
 # Instructions
 
-Steps to reproduce:
-
 Start project up and open "SampleScene.unity" with Unity version 6000.0.33
 
 Play the scene.

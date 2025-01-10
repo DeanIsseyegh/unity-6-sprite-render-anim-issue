@@ -419,6 +419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d9eda710195d441a7ac45f886bde0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shapeAnimators:
+  - {fileID: 1290228830}
+  - {fileID: 315238517}
 --- !u!4 &209736265
 Transform:
   m_ObjectHideFlags: 0
@@ -950,6 +953,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1075,6 +1079,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &519420033
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f4d8c5b5c2a2e7740bfbadee3cc3789f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &542218121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1114,7 @@ GameObject:
   - component: {fileID: 542218124}
   - component: {fileID: 542218123}
   m_Layer: 5
-  m_Name: Destroy Animators
+  m_Name: Destroy Shape Animators
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,7 +1186,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 209736264}
         m_TargetAssemblyTypeName: AnimationManager, Assembly-CSharp
-        m_MethodName: DestroyAllAnims
+        m_MethodName: DestroyShapeAnimators
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2851,7 +2877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Destroy Animators on Shape 1 + 2
+  m_text: Destroy Shape 1 + 2 Animators
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

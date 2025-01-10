@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
-    public void DestroyAllAnims()
+    [SerializeField] private Animator[] _shapeAnimators;
+    
+    public void DestroyShapeAnimators()
     {
-        Animator[] allAnimators = FindObjectsByType<Animator>(FindObjectsInactive.Include, FindObjectsSortMode.None);
-
-        foreach (Animator animator in allAnimators)
+        foreach (Animator animator in _shapeAnimators)
         {
             Destroy(animator);
         }
